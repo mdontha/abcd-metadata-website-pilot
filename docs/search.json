@@ -7,6 +7,13 @@
     "text": "About this site\n\n1 + 1\n\n[1] 2"
   },
   {
+    "objectID": "documentation.html",
+    "href": "documentation.html",
+    "title": "The Pelham Lab's Predictive Screening Tools",
+    "section": "",
+    "text": "Introduction\nThis is a user’s guide to navigating the Pelham Lab’s ABCD metadata spreadsheet (metadata-ABCD-items.csv). The csv file contains several columns meant to help navigate the ABCD dataset while working in R or similar statistical programming languages.\n\n\n\nColumn name\nOrigin\nContents\n\n\n\n\nstudy\nABCD metadata\nthe study the item is derived from (Core or N/A) * might go ahead and delete this column\n\n\ndomain\nABCD metadata\na sorting system that all ABCD 6.0 release variables were sorted into\n\n\nsub_domain\nABCD metadata\na subsystem within domain that all ABCD 6.0 release variables were sorted into\n\n\nsource\nABCD metadata\nallows us to quickly tell who the respondent/subject was\n\n\ntable_name\nABCD metadata\ncollections of ABCD variables that were administered and/or collected together\n\n\nname\nABCD metadata and Pelham Lab\nname of the variable; mostly derived from ABCD 6.0 metadata\n\n\nlabel\nABCD metadata and Pelham Lab\ndescribes the contents of the variable in more detail\n\n\nhas_branching_logic\nPelham Lab\na yes/no indication of the presence of gating\n\n\nsensitivity\nPelham Lab\nan evaluation of how sensitive the content of the variable is\n\n\nplab_facet\nPelham Lab\na sorting system that all ABCD 6.0 release variables and Pelham Lab variables were sorted into\n\n\nplab_subfacet\nPelham Lab\na subsystem within domain that all ABCD 6.0 release and Pelham Lab variables were sorted into\n\n\nalexsa_facet\nPelham Lab\nutilizes the subscales from the Assessment of Liability and EXposure to Substance use and Antisocial behavior for Children (ALEXSA) assessment (Ridenour et al., 2009) to sort variables into\n\n\n\n\n\nstudy\n\n\ndomain\n\n\nsub_domain\n\n\nsource\n\n\ntable_name\n\n\nname\n\n\nlabel\n\n\nhas_branching_logic\n\n\nsensitivity\n\n\nplab_facet\n\n\nplab_subfacet\n\n\nalexsa_facet"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Pelham Lab Screener Documentation",
