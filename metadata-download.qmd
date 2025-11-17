@@ -3,10 +3,14 @@ title: "Screener Metadata"
 format: html
 ---
 
-<iframe src="https://mdontha.shinyapps.io/shiny_app/" width="200%" height="1500px" style="border:none;">
-
-</iframe>
-
 ### Download Full Metadata
 
+<iframe style="width:150%; height:800px; border:none;"
+        src="https://mdontha.shinyapps.io/abcd-metadata-website-pilot/"
+        title="Shiny app"></iframe>
+
 Here is a [link \*\*\*](https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf)to the metadata-xvars.csv for the creation of predictive screening tools. This metadata is to be used in tandem with the Adolescent Brain Cognitive Development (ABCD) Study data.
+
+Here is a link to the metadata-xvars.xlsx, containing all columns from the ABCD 6.0 metadata release AND all columns the Pelham Lab used to sort and recode variables.
+
+
