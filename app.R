@@ -43,10 +43,18 @@ facet_map <- list(
 
 # UI
 ui <- fluidPage(
+  
   titlePanel("Metadata Explorer"),
+  tags$head(tags$style(HTML("
+   /* keep container fluid but cap max width if you like */
+    .container-fluid { max-width: 1600px; margin: 0 auto; }
+    /* ensure main content can scroll horizontally if needed */
+    .shiny-main-panel { overflow-x: auto; }
+                            "))),
   
   sidebarLayout(
     sidebarPanel(
+      width = 3,
       selectizeInput("study_filter", "Select Study:", choices = NULL, selected = NULL, multiple = TRUE),
       selectizeInput("domain_filter", "Select Domain:", choices = NULL, selected = NULL, multiple = TRUE),
       selectizeInput("subdomain_filter", "Select Subdomain:", choices = NULL, selected = NULL, multiple = TRUE),
@@ -59,7 +67,8 @@ ui <- fluidPage(
                      options = list(placeholder = "Choose a Pelham Lab Facet first")),
       selectizeInput("alexsa_facet_filter", "Select ALEXSA Facet:", choices = NULL, selected = NULL, multiple = TRUE)
     ),
-    mainPanel(DTOutput("table")
+    mainPanel(width = 9,
+      DTOutput("table", width =)
     )
   )
 )
@@ -254,8 +263,16 @@ server <- function(input, output, session){
   })
   # render filtered datatable
   output$table <- renderDT({datatable(filtered_data(), 
-                                      options = list(pageLength = 10),
-                                      rownames = FALSE)
+                                      options = list(
+                                        scrollX = TRUE,
+                                        scrollY = "70vh",
+                                        paging = TRUE,
+                                        autoWidth = TRUE,
+                                        columnDefs = list(list(width = '150px', targets = '_all'))
+                                      ),
+                                      class = "strip hover compact",
+                                      rownames = FALSE,
+                                      escape = FALSE)
   })
 }
 shinyApp(ui = ui, server = server)
