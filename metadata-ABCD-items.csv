@@ -1,4 +1,4 @@
-study,domain,sub_domain,source,table_name,name,label,has_skip_logic,sensitivity,plab_facet,plab_subfacet,alexsa_facet
+study,domain,sub_domain,source,table_name,name,label,has_branching_logic,sensitivity,plab_facet,plab_subfacet,alexsa_facet
 Core,ABCD (General),Demographics,Parent,ab_p_demo,ab_p_demo__age__slf_001,How old are you? [Cross-listed: mh_p_asr__slf__age_001],yes,not sensitive,demographics,age,_none_
 Core,ABCD (General),Demographics,Parent,ab_p_demo,ab_p_demo__child__time_001,Is there another household in which the child spends a significant amount of time?,no,not sensitive,demographics,household structure,_none_
 Core,ABCD (General),Demographics,Parent,ab_p_demo,ab_p_demo__country_002,How many years has the child lived in the United States?,yes,not sensitive,identities,country,_none_

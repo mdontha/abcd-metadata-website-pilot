@@ -3,7 +3,7 @@ title: "Screener Metadata"
 format: html
 ---
 
-<iframe src="https://mdontha.shinyapps.io/shiny_app/" width="150%" height="1500px" style="border:none;">
+<iframe src="https://mdontha.shinyapps.io/shiny_app/" width="200%" height="1500px" style="border:none;">
 
 </iframe>
 
