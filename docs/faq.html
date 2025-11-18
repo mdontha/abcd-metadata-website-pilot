@@ -82,7 +82,11 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="./index.html" rel="" target="">
- <span class="menu-text">About - What is this?</span></a>
+ <span class="menu-text">Welcome to TSP-ABCD</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html" rel="" target="">
+ <span class="menu-text">About - what is this?</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./faq.html" rel="" target="" aria-current="page">
@@ -132,13 +136,41 @@ ul.task-list li input[type="checkbox"] {
 <section id="frequently-asked-questions" class="level2">
 <h2 class="anchored" data-anchor-id="frequently-asked-questions">Frequently Asked Questions</h2>
 <p>If you have a question that is not currently addressed here, please reach out to &lt;wpelham at ucsd dot edu&gt;.</p>
+<section id="will-the-code-in-abcd-itembuild-work-if-i-dont-have-the-abcd-study-data" class="level4">
+<h4 class="anchored" data-anchor-id="will-the-code-in-abcd-itembuild-work-if-i-dont-have-the-abcd-study-data">Will the code in abcd-itembuild work if I don’t have the ABCD Study data?</h4>
+<p>No, you must attain access to the ABCD 6.0 release (only available directly from the NIH) for the code to work. It is highly specific to the ABCD dataset.</p>
+</section>
+<section id="how-did-you-create-the-metadata" class="level4">
+<h4 class="anchored" data-anchor-id="how-did-you-create-the-metadata">How did you create the metadata?</h4>
+<p>Pelham Lab research assistants evaluated the entirety of the metadata from the ABCD 6.0 release under the supervision of Dr.&nbsp;William Pelham III. Variables were first evaluated on the basis of viability as a question on a survey. If a variable could be a survey question, it was then evaluated on the following: a) administration of the variable in the core study (such that all eligible ABCD participants could have completed the variable) , b) administration of the variable happening outside of the eligibility screener, c) if gating is present, the variable’s ability to be combined with the gating question(s) to produce a straightforward single question with a single set of responses with a monotonic relationship with the outcomes , and d) any other reason that would make presenting the variable on a predictive screening battery difficult.</p>
+<p>More information on how we created the bespoke metadata can be found <a href="https://docs.google.com/document/d/1wit57vQvdoEeb6oLyM0x9mYwy2F0ez0y_4foyNkmhvY/edit?tab=t.0">here</a>.</p>
+</section>
+<section id="how-did-you-decide-which-variables-to-recode-and-how-to-recode-them" class="level4">
+<h4 class="anchored" data-anchor-id="how-did-you-decide-which-variables-to-recode-and-how-to-recode-them">How did you decide which variables to recode, and how to recode them?</h4>
+<p>Variables were recoded for the following reasons:</p>
+<ol type="1">
+<li><p>The same variable was split into two or more separate variables: usually a baseline variable and a longitudinal variable. Upon evaluating that there was no meaningful change in the contents of the question itself, these variables were coalesced into the baseline variable. After this, we delete the longitudinal variable.</p></li>
+<li><p>The variable itself did not have responses that were monotonic (linear). For example, the question</p>
+<p><em>What best describes your child’s current school setting?</em></p>
+<p>can only elicit responses that are not linear (e.g., “public school”, “private school”, “home school”, etc.). To be able to use the content of these variables in our prediction models, we recoded each response to these nonlinear variables as binary (0/1) items (e.g., child_in_reg_public_school, child_in_reg_private_school, child_in_online_school, etc.).</p></li>
+<li><p>The variable was gated by another variable, such that only a subsection of the full ABCD participant pool responded to it AND answers from the gating question(s) could be imputed as responses to the gated variable.</p></li>
+<li><p>The variable was in units that could not be adequately represented in a linear model (e.g., hours and minutes) without recoding (e.g., 3:30 pm –&gt; 15.5)</p></li>
+</ol>
+</section>
 <section id="where-are-the-items-measuring-youth-substance-use" class="level4">
 <h4 class="anchored" data-anchor-id="where-are-the-items-measuring-youth-substance-use">Where are the items measuring youth substance use?</h4>
-<p>TSP-ABCD was initially conceptualized as a predictive tool for high-risk, early substance use. As such, the lab prioritized evaluating whether variables could be considered items when they did not contain youth substance use. We are currently working on evaluating these variables and will update the metadata on this website once we have finished. Here is a <a href="https://www.rd.usda.gov/sites/default/files/pdf-sample_0.pdf">spreadsheet</a> containing all potential items flagged for youth substance use.</p>
+<p>TSP-ABCD was initially conceptualized as a predictive tool for the outcome of high-risk, early substance use. As such, the lab prioritized evaluating whether variables could be considered items when they did not contain youth substance use. We are currently working on evaluating these variables and will update the metadata on this website once we have finished. Here is a <a href="https://www.rd.usda.gov/sites/default/files/pdf-sample_0.pdf">spreadsheet</a> containing all potential items flagged for youth substance use.</p>
 </section>
-<section id="where-can-i-find-more-detail-about-the-creation-of-the-bespoke-item-metadata" class="level4">
-<h4 class="anchored" data-anchor-id="where-can-i-find-more-detail-about-the-creation-of-the-bespoke-item-metadata">Where can I find more detail about the creation of the bespoke item metadata?</h4>
-<p>You can find more details about our procedure for creating <a href="https://docs.google.com/document/d/1wit57vQvdoEeb6oLyM0x9mYwy2F0ez0y_4foyNkmhvY/edit?tab=t.0">here</a>.</p>
+<section id="i-think-there-is-a-bug-in-your-code-or-error-in-your-metadata-what-should-i-do" class="level4">
+<h4 class="anchored" data-anchor-id="i-think-there-is-a-bug-in-your-code-or-error-in-your-metadata-what-should-i-do">I think there is a bug in your code or error in your metadata — what should I do?</h4>
+<p>Please report any bugs or errors to &lt; placeholder at health dot ucsd dot edu &gt;</p>
+</section>
+<section id="what-is-alexsa-and-why-is-it-included-in-the-metadata" class="level4">
+<h4 class="anchored" data-anchor-id="what-is-alexsa-and-why-is-it-included-in-the-metadata">What is “ALEXSA” and why is it included in the metadata?</h4>
+<p>Assessment of Liability and EXposure to Substance use and Antisocial behavior for Children (ALEXSA) assessment (<a href="https://pubmed.ncbi.nlm.nih.gov/20180677/">Ridenour et al., 2009</a>) is a child report assessment for predictors of early onset substance abuse and for antisocial behavior. The “alexsa_facet” featured in metadata-ABCD-items.csv was created through evaluating whether each item fit into one of the 34 subscales.</p>
+</section>
+<section id="section" class="level4">
+<h4 class="anchored" data-anchor-id="section"></h4>
 
 
 </section>
