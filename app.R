@@ -7,7 +7,6 @@ suppressWarnings({
     library(DT)
     
     # load csv file
-    # path_to_metadata_xvars is in _paths (output csv from abcd-itembuild)
     metadata.xvars <- read.csv("metadata-ABCD-items.csv") # completed metadata from itembuild (only items)
   }) 
 })
@@ -68,7 +67,7 @@ ui <- fluidPage(
       selectizeInput("alexsa_facet_filter", "Select ALEXSA Facet:", choices = NULL, selected = NULL, multiple = TRUE)
     ),
     mainPanel(width = 9,
-      DTOutput("table", width =)
+      DTOutput("table", width = "100%")
     )
   )
 )
