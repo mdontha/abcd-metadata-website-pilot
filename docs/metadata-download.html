@@ -120,7 +120,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#item-metadata-download" id="toc-item-metadata-download" class="nav-link active" data-scroll-target="#item-metadata-download">Item Metadata Download</a>
+  <ul class="collapse">
+  <li><a href="#documentation-for-navigating-the-item-metadata" id="toc-documentation-for-navigating-the-item-metadata" class="nav-link" data-scroll-target="#documentation-for-navigating-the-item-metadata">Documentation for Navigating the Item Metadata</a></li>
   <li><a href="#study" id="toc-study" class="nav-link" data-scroll-target="#study">study</a></li>
   <li><a href="#domain" id="toc-domain" class="nav-link" data-scroll-target="#domain">domain</a></li>
   <li><a href="#sub_domain" id="toc-sub_domain" class="nav-link" data-scroll-target="#sub_domain">sub_domain</a></li>
@@ -133,6 +135,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#plab_facet" id="toc-plab_facet" class="nav-link" data-scroll-target="#plab_facet">plab_facet</a></li>
   <li><a href="#plab_subfacet" id="toc-plab_subfacet" class="nav-link" data-scroll-target="#plab_subfacet">plab_subfacet</a></li>
   <li><a href="#alexsa_facet" id="toc-alexsa_facet" class="nav-link" data-scroll-target="#alexsa_facet">alexsa_facet</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -141,9 +144,12 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="introduction" class="level3">
-<h3 class="anchored" data-anchor-id="introduction">Introduction</h3>
-<p>This is a user’s guide to navigating the Pelham Lab’s ABCD metadata spreadsheet (metadata-ABCD-items.csv). The csv file contains several columns meant to help navigate the ABCD dataset while working in R or similar statistical programming languages.</p>
+<section id="item-metadata-download" class="level2">
+<h2 class="anchored" data-anchor-id="item-metadata-download">Item Metadata Download</h2>
+<p>Here is the <a href="https://www.rd.usda.gov/sites/default/files/pdf-sample_0.pdf">link</a> to the csv file (metadata-ABCD-items.csv) for the item metadata for TSP-ABCD.</p>
+<section id="documentation-for-navigating-the-item-metadata" class="level3">
+<h3 class="anchored" data-anchor-id="documentation-for-navigating-the-item-metadata">Documentation for Navigating the Item Metadata</h3>
+<p>This is a user’s guide to navigating the item metadata for TSP-ABCD (metadata-ABCD-items.csv). The csv file contains several columns meant to help navigate the ABCD dataset while working in R or similar statistical programming languages.</p>
 <table class="table">
 <caption>Please <strong>scroll horizontally</strong> to view the entirety of the table</caption>
 <thead>
@@ -216,8 +222,6 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
-<p>Pelham Lab Metadata (metadata-ABCD-items.csv) consists only of variables considered viable items for use in a predictive screening battery. The full metadata containing all columns from the ABCD 6.0 metadata release AND all columns the Pelham Lab used to sort and recode variables can be found <a href="https://www.rd.usda.gov/sites/default/files/pdf-sample_0.pdf">here</a>.</p>
-<p>Pelham Lab research assistants evaluated the entirety of the metadata from the ABCD 6.0 release under the supervision of Dr.&nbsp;William Pelham III. Variables were first evaluated on the basis of viability as a question on a survey. If a variable could be a survey question, it was then evaluated on the following: a) administration of the variable in the core study (such that all eligible ABCD participants could have completed the variable) , b) administration of the variable happening outside of the eligibility screener, c) if gating is present, the variable’s ability to be combined with the gating question(s) to produce a straightforward single question with a single set of responses with a monotonic relationship with the outcomes , and d) any other reason that would make presenting the variable on a predictive screening battery difficult. More information on how we created the bespoke metadata can be found <a href="https://docs.google.com/document/d/1wit57vQvdoEeb6oLyM0x9mYwy2F0ez0y_4foyNkmhvY/edit?tab=t.0">here</a>.</p>
 </section>
 <section id="study" class="level3">
 <h3 class="anchored" data-anchor-id="study">study</h3>
@@ -256,6 +260,7 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="alexsa_facet">alexsa_facet</h3>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
