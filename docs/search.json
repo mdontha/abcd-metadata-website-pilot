@@ -7,11 +7,39 @@
     "text": "About this site\n\n1 + 1\n\n[1] 2"
   },
   {
-    "objectID": "documentation.html",
-    "href": "documentation.html",
-    "title": "The Pelham Lab's Predictive Screening Tools",
+    "objectID": "code-download.html",
+    "href": "code-download.html",
+    "title": "Tools for Survey-Based Prediction in ABCD",
     "section": "",
-    "text": "Introduction\nThis is a user’s guide to navigating the Pelham Lab’s ABCD metadata spreadsheet (metadata-ABCD-items.csv). The csv file contains several columns meant to help navigate the ABCD dataset while working in R or similar statistical programming languages.\n\nPlease scroll horizontally to view the entirety of the table\n\n\nColumn\nOrigin\nContents\n\n\n\n\nstudy\nABCD metadata\nthe study the item is derived from (Core or N/A) * might go ahead and delete this column\n\n\ndomain\nABCD metadata\na sorting system that all ABCD 6.0 release variables were sorted into\n\n\nsub_domain\nABCD metadata\na subsystem within domain that all ABCD 6.0 release variables were sorted into\n\n\nsource\nABCD metadata\nallows us to quickly tell who the respondent/subject was\n\n\ntable_name\nABCD metadata\ncollections of ABCD variables that were administered and/or collected together\n\n\nname\nABCD metadata and Pelham Lab\nname of the variable; mostly derived from ABCD 6.0 metadata; some created by the Pelham Lab through manipulation\n\n\nlabel\nABCD metadata and Pelham Lab\ndescribes the contents of the variable in more detail\n\n\nhas_branching_logic\nPelham Lab\na yes/no indication of the presence of gating\n\n\nsensitivity\nPelham Lab\nan evaluation of how sensitive the content of the variable is\n\n\nplab_facet\nPelham Lab\na sorting system that all ABCD 6.0 release variables and Pelham Lab variables were sorted into\n\n\nplab_subfacet\nPelham Lab\na subsystem within domain that all ABCD 6.0 release and Pelham Lab variables were sorted into\n\n\nalexsa_facet\nPelham Lab\nutilizes the subscales from the Assessment of Liability and EXposure to Substance use and Antisocial behavior for Children (ALEXSA) assessment (Ridenour et al., 2009) to sort variables into\n\n\n\nPelham Lab Metadata (metadata-ABCD-items.csv) consists only of variables considered viable items for use in a predictive screening battery. The full metadata containing all columns from the ABCD 6.0 metadata release AND all columns the Pelham Lab used to sort and recode variables can be found here.\nPelham Lab research assistants evaluated the entirety of the metadata from the ABCD 6.0 release under the supervision of Dr. William Pelham III. Variables were first evaluated on the basis of viability as a question on a survey. If a variable could be a survey question, it was then evaluated on the following: a) administration of the variable in the core study (such that all eligible ABCD participants could have completed the variable) , b) administration of the variable happening outside of the eligibility screener, c) if gating is present, the variable’s ability to be combined with the gating question(s) to produce a straightforward single question with a single set of responses with a monotonic relationship with the outcomes , and d) any other reason that would make presenting the variable on a predictive screening battery difficult. More information on how we created the bespoke metadata can be found here.\n\n\nstudy\n\n\ndomain\n\n\nsub_domain\n\n\nsource\n\n\ntable_name\n\n\nname\n\n\nlabel\n\n\nhas_branching_logic\n\n\nsensitivity\n\n\nplab_facet\n\n\nplab_subfacet\n\n\nalexsa_facet"
+    "text": "Here is a link to the Github Repository containing the R project where we created the itembuild for TSP-ABCD."
+  },
+  {
+    "objectID": "code-download.html#download-the-code",
+    "href": "code-download.html#download-the-code",
+    "title": "Tools for Survey-Based Prediction in ABCD",
+    "section": "",
+    "text": "Here is a link to the Github Repository containing the R project where we created the itembuild for TSP-ABCD."
+  },
+  {
+    "objectID": "explore-metadata.html",
+    "href": "explore-metadata.html",
+    "title": "Screener Metadata",
+    "section": "",
+    "text": "Download Full Metadata\n\n\nHere is a link ***to the metadata-xvars.csv for the creation of predictive screening tools. This metadata is to be used in tandem with the Adolescent Brain Cognitive Development (ABCD) Study data.\nHere is a link to the metadata-xvars.xlsx, containing all columns from the ABCD 6.0 metadata release AND all columns the Pelham Lab used to sort and recode variables."
+  },
+  {
+    "objectID": "faq.html",
+    "href": "faq.html",
+    "title": "Tools for Survey-Based Prediction in ABCD",
+    "section": "",
+    "text": "If you have a question that is not currently addressed here, please reach out to &lt;wpelham at ucsd dot edu&gt;.\n\n\nTSP-ABCD was initially conceptualized as a predictive tool for high-risk, early substance use. As such, the lab prioritized evaluating whether variables could be considered items when they did not contain youth substance use. We are currently working on evaluating these variables and will update the metadata on this website once we have finished. Here is a spreadsheet containing all potential items flagged for youth substance use.\n\n\n\nYou can find more details about our procedure for creating here."
+  },
+  {
+    "objectID": "faq.html#frequently-asked-questions",
+    "href": "faq.html#frequently-asked-questions",
+    "title": "Tools for Survey-Based Prediction in ABCD",
+    "section": "",
+    "text": "If you have a question that is not currently addressed here, please reach out to &lt;wpelham at ucsd dot edu&gt;.\n\n\nTSP-ABCD was initially conceptualized as a predictive tool for high-risk, early substance use. As such, the lab prioritized evaluating whether variables could be considered items when they did not contain youth substance use. We are currently working on evaluating these variables and will update the metadata on this website once we have finished. Here is a spreadsheet containing all potential items flagged for youth substance use.\n\n\n\nYou can find more details about our procedure for creating here."
   },
   {
     "objectID": "index.html",
@@ -30,8 +58,22 @@
   {
     "objectID": "metadata-download.html",
     "href": "metadata-download.html",
-    "title": "Screener Metadata",
+    "title": "Tools for Survey-Based Prediction in ABCD",
     "section": "",
-    "text": "Download Full Metadata\n\n\nHere is a link ***to the metadata-xvars.csv for the creation of predictive screening tools. This metadata is to be used in tandem with the Adolescent Brain Cognitive Development (ABCD) Study data.\nHere is a link to the metadata-xvars.xlsx, containing all columns from the ABCD 6.0 metadata release AND all columns the Pelham Lab used to sort and recode variables."
+    "text": "Introduction\nThis is a user’s guide to navigating the Pelham Lab’s ABCD metadata spreadsheet (metadata-ABCD-items.csv). The csv file contains several columns meant to help navigate the ABCD dataset while working in R or similar statistical programming languages.\n\nPlease scroll horizontally to view the entirety of the table\n\n\nColumn\nOrigin\nContents\n\n\n\n\nstudy\nABCD metadata\nthe study the item is derived from (Core or N/A) * might go ahead and delete this column\n\n\ndomain\nABCD metadata\na sorting system that all ABCD 6.0 release variables were sorted into\n\n\nsub_domain\nABCD metadata\na subsystem within domain that all ABCD 6.0 release variables were sorted into\n\n\nsource\nABCD metadata\nallows us to quickly tell who the respondent/subject was\n\n\ntable_name\nABCD metadata\ncollections of ABCD variables that were administered and/or collected together\n\n\nname\nABCD metadata and Pelham Lab\nname of the variable; mostly derived from ABCD 6.0 metadata; some created by the Pelham Lab through manipulation\n\n\nlabel\nABCD metadata and Pelham Lab\ndescribes the contents of the variable in more detail\n\n\nhas_branching_logic\nPelham Lab\na yes/no indication of the presence of gating\n\n\nsensitivity\nPelham Lab\nan evaluation of how sensitive the content of the variable is\n\n\nplab_facet\nPelham Lab\na sorting system that all ABCD 6.0 release variables and Pelham Lab variables were sorted into\n\n\nplab_subfacet\nPelham Lab\na subsystem within domain that all ABCD 6.0 release and Pelham Lab variables were sorted into\n\n\nalexsa_facet\nPelham Lab\nutilizes the subscales from the Assessment of Liability and EXposure to Substance use and Antisocial behavior for Children (ALEXSA) assessment (Ridenour et al., 2009) to sort variables into\n\n\n\nPelham Lab Metadata (metadata-ABCD-items.csv) consists only of variables considered viable items for use in a predictive screening battery. The full metadata containing all columns from the ABCD 6.0 metadata release AND all columns the Pelham Lab used to sort and recode variables can be found here.\nPelham Lab research assistants evaluated the entirety of the metadata from the ABCD 6.0 release under the supervision of Dr. William Pelham III. Variables were first evaluated on the basis of viability as a question on a survey. If a variable could be a survey question, it was then evaluated on the following: a) administration of the variable in the core study (such that all eligible ABCD participants could have completed the variable) , b) administration of the variable happening outside of the eligibility screener, c) if gating is present, the variable’s ability to be combined with the gating question(s) to produce a straightforward single question with a single set of responses with a monotonic relationship with the outcomes , and d) any other reason that would make presenting the variable on a predictive screening battery difficult. More information on how we created the bespoke metadata can be found here.\n\n\nstudy\n\n\ndomain\n\n\nsub_domain\n\n\nsource\n\n\ntable_name\n\n\nname\n\n\nlabel\n\n\nhas_branching_logic\n\n\nsensitivity\n\n\nplab_facet\n\n\nplab_subfacet\n\n\nalexsa_facet"
+  },
+  {
+    "objectID": "worked-example.html",
+    "href": "worked-example.html",
+    "title": "Tools for Survey-Based Prediction in ABCD",
+    "section": "",
+    "text": "bleh\npaper\nbleh"
+  },
+  {
+    "objectID": "worked-example.html#worked-example",
+    "href": "worked-example.html#worked-example",
+    "title": "Tools for Survey-Based Prediction in ABCD",
+    "section": "",
+    "text": "bleh\npaper\nbleh"
   }
 ]

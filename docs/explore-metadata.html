@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Tools for Survey-Based Prediction in ABCD – metadata-download</title>
+<title>Tools for Survey-Based Prediction in ABCD - Screener Metadata</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -93,11 +93,11 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Download the Code</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./metadata-download.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="./metadata-download.html" rel="" target="">
  <span class="menu-text">Download the Item Metadata</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./explore-metadata.html" rel="" target="">
+    <a class="nav-link active" href="./explore-metadata.html" rel="" target="" aria-current="page">
  <span class="menu-text">Explore the Item Metadata</span></a>
   </li>  
   <li class="nav-item">
@@ -120,140 +120,36 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#study" id="toc-study" class="nav-link" data-scroll-target="#study">study</a></li>
-  <li><a href="#domain" id="toc-domain" class="nav-link" data-scroll-target="#domain">domain</a></li>
-  <li><a href="#sub_domain" id="toc-sub_domain" class="nav-link" data-scroll-target="#sub_domain">sub_domain</a></li>
-  <li><a href="#source" id="toc-source" class="nav-link" data-scroll-target="#source">source</a></li>
-  <li><a href="#table_name" id="toc-table_name" class="nav-link" data-scroll-target="#table_name">table_name</a></li>
-  <li><a href="#name" id="toc-name" class="nav-link" data-scroll-target="#name">name</a></li>
-  <li><a href="#label" id="toc-label" class="nav-link" data-scroll-target="#label">label</a></li>
-  <li><a href="#has_branching_logic" id="toc-has_branching_logic" class="nav-link" data-scroll-target="#has_branching_logic">has_branching_logic</a></li>
-  <li><a href="#sensitivity" id="toc-sensitivity" class="nav-link" data-scroll-target="#sensitivity">sensitivity</a></li>
-  <li><a href="#plab_facet" id="toc-plab_facet" class="nav-link" data-scroll-target="#plab_facet">plab_facet</a></li>
-  <li><a href="#plab_subfacet" id="toc-plab_subfacet" class="nav-link" data-scroll-target="#plab_subfacet">plab_subfacet</a></li>
-  <li><a href="#alexsa_facet" id="toc-alexsa_facet" class="nav-link" data-scroll-target="#alexsa_facet">alexsa_facet</a></li>
+  <li><a href="#download-full-metadata" id="toc-download-full-metadata" class="nav-link active" data-scroll-target="#download-full-metadata">Download Full Metadata</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Screener Metadata</h1>
+</div>
 
 
-<section id="introduction" class="level3">
-<h3 class="anchored" data-anchor-id="introduction">Introduction</h3>
-<p>This is a user’s guide to navigating the Pelham Lab’s ABCD metadata spreadsheet (metadata-ABCD-items.csv). The csv file contains several columns meant to help navigate the ABCD dataset while working in R or similar statistical programming languages.</p>
-<table class="table">
-<caption>Please <strong>scroll horizontally</strong> to view the entirety of the table</caption>
-<thead>
-<tr class="header">
-<th>Column</th>
-<th>Origin</th>
-<th>Contents</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="#study">study</a></td>
-<td>ABCD metadata</td>
-<td>the study the item is derived from (Core or N/A) * might go ahead and delete this column</td>
-</tr>
-<tr class="even">
-<td><a href="#domain">domain</a></td>
-<td>ABCD metadata</td>
-<td>a sorting system that all ABCD 6.0 release variables were sorted into</td>
-</tr>
-<tr class="odd">
-<td><a href="#sub_domain">sub_domain</a></td>
-<td>ABCD metadata</td>
-<td>a subsystem within domain that all ABCD 6.0 release variables were sorted into</td>
-</tr>
-<tr class="even">
-<td><a href="#source">source</a></td>
-<td>ABCD metadata</td>
-<td>allows us to quickly tell who the respondent/subject was</td>
-</tr>
-<tr class="odd">
-<td><a href="#table_name">table_name</a></td>
-<td>ABCD metadata</td>
-<td>collections of ABCD variables that were administered and/or collected together</td>
-</tr>
-<tr class="even">
-<td><a href="#name">name</a></td>
-<td>ABCD metadata and Pelham Lab</td>
-<td>name of the variable; mostly derived from ABCD 6.0 metadata; some created by the Pelham Lab through manipulation</td>
-</tr>
-<tr class="odd">
-<td><a href="#label">label</a></td>
-<td>ABCD metadata and Pelham Lab</td>
-<td>describes the contents of the variable in more detail</td>
-</tr>
-<tr class="even">
-<td><a href="#has_branching_logic">has_branching_logic</a></td>
-<td>Pelham Lab</td>
-<td>a yes/no indication of the presence of gating</td>
-</tr>
-<tr class="odd">
-<td><a href="#sensitivity">sensitivity</a></td>
-<td>Pelham Lab</td>
-<td>an evaluation of how sensitive the content of the variable is</td>
-</tr>
-<tr class="even">
-<td><a href="#plab_facet">plab_facet</a></td>
-<td>Pelham Lab</td>
-<td>a sorting system that all ABCD 6.0 release variables and Pelham Lab variables were sorted into</td>
-</tr>
-<tr class="odd">
-<td><a href="#plab_subfacet">plab_subfacet</a></td>
-<td>Pelham Lab</td>
-<td>a subsystem within domain that all ABCD 6.0 release and Pelham Lab variables were sorted into</td>
-</tr>
-<tr class="even">
-<td><a href="#alexsa_facet">alexsa_facet</a></td>
-<td>Pelham Lab</td>
-<td>utilizes the subscales from the Assessment of Liability and EXposure to Substance use and Antisocial behavior for Children (ALEXSA) assessment (Ridenour et al., 2009) to sort variables into</td>
-</tr>
-</tbody>
-</table>
-<p>Pelham Lab Metadata (metadata-ABCD-items.csv) consists only of variables considered viable items for use in a predictive screening battery. The full metadata containing all columns from the ABCD 6.0 metadata release AND all columns the Pelham Lab used to sort and recode variables can be found <a href="https://www.rd.usda.gov/sites/default/files/pdf-sample_0.pdf">here</a>.</p>
-<p>Pelham Lab research assistants evaluated the entirety of the metadata from the ABCD 6.0 release under the supervision of Dr.&nbsp;William Pelham III. Variables were first evaluated on the basis of viability as a question on a survey. If a variable could be a survey question, it was then evaluated on the following: a) administration of the variable in the core study (such that all eligible ABCD participants could have completed the variable) , b) administration of the variable happening outside of the eligibility screener, c) if gating is present, the variable’s ability to be combined with the gating question(s) to produce a straightforward single question with a single set of responses with a monotonic relationship with the outcomes , and d) any other reason that would make presenting the variable on a predictive screening battery difficult. More information on how we created the bespoke metadata can be found <a href="https://docs.google.com/document/d/1wit57vQvdoEeb6oLyM0x9mYwy2F0ez0y_4foyNkmhvY/edit?tab=t.0">here</a>.</p>
-</section>
-<section id="study" class="level3">
-<h3 class="anchored" data-anchor-id="study">study</h3>
-</section>
-<section id="domain" class="level3">
-<h3 class="anchored" data-anchor-id="domain">domain</h3>
-</section>
-<section id="sub_domain" class="level3">
-<h3 class="anchored" data-anchor-id="sub_domain">sub_domain</h3>
-</section>
-<section id="source" class="level3">
-<h3 class="anchored" data-anchor-id="source">source</h3>
-</section>
-<section id="table_name" class="level3">
-<h3 class="anchored" data-anchor-id="table_name">table_name</h3>
-</section>
-<section id="name" class="level3">
-<h3 class="anchored" data-anchor-id="name">name</h3>
-</section>
-<section id="label" class="level3">
-<h3 class="anchored" data-anchor-id="label">label</h3>
-</section>
-<section id="has_branching_logic" class="level3">
-<h3 class="anchored" data-anchor-id="has_branching_logic">has_branching_logic</h3>
-</section>
-<section id="sensitivity" class="level3">
-<h3 class="anchored" data-anchor-id="sensitivity">sensitivity</h3>
-</section>
-<section id="plab_facet" class="level3">
-<h3 class="anchored" data-anchor-id="plab_facet">plab_facet</h3>
-</section>
-<section id="plab_subfacet" class="level3">
-<h3 class="anchored" data-anchor-id="plab_subfacet">plab_subfacet</h3>
-</section>
-<section id="alexsa_facet" class="level3">
-<h3 class="anchored" data-anchor-id="alexsa_facet">alexsa_facet</h3>
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="download-full-metadata" class="level3">
+<h3 class="anchored" data-anchor-id="download-full-metadata">Download Full Metadata</h3>
+<iframe style="width:150%; height:800px; border:none;" src="https://mdontha.shinyapps.io/abcd-metadata-website-pilot/" title="Shiny app">
+</iframe>
+<p>Here is a <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf">link ***</a>to the metadata-xvars.csv for the creation of predictive screening tools. This metadata is to be used in tandem with the Adolescent Brain Cognitive Development (ABCD) Study data.</p>
+<p>Here is a link to the metadata-xvars.xlsx, containing all columns from the ABCD 6.0 metadata release AND all columns the Pelham Lab used to sort and recode variables.</p>
 
 
 </section>
