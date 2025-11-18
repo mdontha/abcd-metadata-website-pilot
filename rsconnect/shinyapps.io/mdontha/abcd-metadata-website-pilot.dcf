@@ -1,0 +1,12 @@
+name: abcd-metadata-website-pilot
+title: abcd-metadata-website-pilot
+username: mdontha
+account: mdontha
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 16093509
+bundleId: 11192108
+url: https://mdontha.shinyapps.io/abcd-metadata-website-pilot/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE

@@ -3,15 +3,22 @@ project:
   output-dir : docs
 
 website:
-  title: "The Pelham Lab's Predictive Screening Tools"
+  title: "Tools for Survey-Based Prediction in ABCD"
   navbar:
     left:
       - file: index.qmd
-        text: Home
+        text: About - What is this?
+      - file: faq.qmd
+        text: FAQs
+      - file: code-download.qmd
+        text: Download the Code
       - file: metadata-download.qmd
-        text: Metadata Download
-      - file: documentation.qmd
-        text: Documentation
+        text: Download the Item Metadata
+      - file: explore-metadata.qmd
+        text: Explore the Item Metadata
+      - file: worked-example.qmd
+        text: Worked Example
+
 
       
 
