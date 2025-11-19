@@ -7,7 +7,9 @@ website:
   navbar:
     left:
       - file: index.qmd
-        text: About - What is this?
+        text: Welcome to TSP-ABCD
+      - file: about.qmd
+        text: About - what is this?
       - file: faq.qmd
         text: FAQs
       - file: code-download.qmd

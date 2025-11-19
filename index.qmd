@@ -4,12 +4,4 @@ title: "About TSP-ABCD"
 
 ## Welcome
 
-This is the website for navigating Tools for Survey-Based Prediction in the Adolescent Brain Cognitive Development Study (TSP-ABCD). TSP-ABCD provides researchers familiar with the ABCD study with practical tools for the creation of predictive survey and / or screening models in the ABCD Study.
-
-Pelham Lab research assistants evaluated every variable in the ABCD 6.0 release under the supervision of Dr. William Pelham III to ensure that TSP-ABCD consists only of variables considered viable items for use in a predictive screening battery.
-
-Pelham Lab Predictive Screening Tools Metadata, a tool for building predictive screening tools with the Adolescent Brain Cognitive Development (ABCD) study dataset.
-
-Pelham Lab Metadata (metadata-ABCD-items.csv) consists only of variables considered viable items for use in a predictive screening battery.
-
-Pelham Lab research assistants evaluated the entirety of the metadata from the ABCD 6.0 release under the supervision of Dr. William Pelham III. Variables were first evaluated on the basis of viability as a question on a survey. If a variable could be a survey question, it was then evaluated on the following: a) administration of the variable in the core study (such that all eligible ABCD participants could have completed the variable) , b) administration of the variable happening outside of the eligibility screener, c) if gating is present, the variable's ability to be combined with the gating question(s) to produce a straightforward single question with a single set of responses with a monotonic relationship with the outcomes , and d) any other reason that would make presenting the variable on a predictive screening battery difficult. More information on how we created the bespoke metadata can be found [here](https://docs.google.com/document/d/1wit57vQvdoEeb6oLyM0x9mYwy2F0ez0y_4foyNkmhvY/edit?tab=t.0).
+This is the website for navigating Tools for Survey-Based Prediction in the Adolescent Brain Cognitive Development Study (TSP-ABCD). TSP-ABCD provides researchers familiar with the ABCD study with practical tools to create predictive survey and / or screening models in the ABCD Study.

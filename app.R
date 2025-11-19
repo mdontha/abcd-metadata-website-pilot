@@ -45,29 +45,44 @@ ui <- fluidPage(
   
   titlePanel("Metadata Explorer"),
   tags$head(tags$style(HTML("
-   /* keep container fluid but cap max width if you like */
+   /* page container (unchanged) */
     .container-fluid { max-width: 1600px; margin: 0 auto; }
-    /* ensure main content can scroll horizontally if needed */
+
+    /* wrap + constrain the top filter well */
+    .filters-wrap { max-width: 900px; margin: 8px auto; }   /* <-- change 900px to taste */
+
+    /* top filter bar layout (keeps inputs wrapping) */
+    .top-filter-bar { display:flex; flex-wrap:wrap; gap:10px; align-items:flex-start; margin-bottom: 12px; }
+    .filter-wrap { min-width: 180px; max-width: 320px; flex: 1 1 180px; }
+
+    /* small screens: stack filters full-width */
+    @media (max-width: 768px) {
+      .filter-wrap { min-width: 100%; }
+      .filters-wrap { padding-left: 8px; padding-right: 8px; }
+    }
+
+    /* ensure datatable scrolls horizontally */
     .shiny-main-panel { overflow-x: auto; }
-                            "))),
+  "))),
   
-  sidebarLayout(
-    sidebarPanel(
-      width = 3,
-      selectizeInput("study_filter", "Select Study:", choices = NULL, selected = NULL, multiple = TRUE),
-      selectizeInput("domain_filter", "Select Domain:", choices = NULL, selected = NULL, multiple = TRUE),
-      selectizeInput("subdomain_filter", "Select Subdomain:", choices = NULL, selected = NULL, multiple = TRUE),
-      selectizeInput("source_filter", "Select Source:", choices = NULL, selected = NULL, multiple = TRUE),
-      selectizeInput("table_name_filter", "Select Table:", choices = NULL, selected = NULL, multiple = TRUE),
-      selectizeInput("has_branching_logic_filter", "Select Branching Logic:", choices = NULL, selected = NULL, multiple = TRUE),
-      selectizeInput("sensitivity_filter", "Select Sensitivity:", choices = NULL, selected = NULL, multiple = TRUE),
-      selectizeInput("plab_facet_filter", "Select Pelham Lab Facet:", choices = NULL, selected = NULL, multiple = TRUE),
-      selectizeInput("plab_subfacet_filter", "Select Pelham Lab Subfacet:", choices = NULL, selected = NULL, multiple = TRUE, 
-                     options = list(placeholder = "Choose a Pelham Lab Facet first")),
-      selectizeInput("alexsa_facet_filter", "Select ALEXSA Facet:", choices = NULL, selected = NULL, multiple = TRUE)
-    ),
-    mainPanel(width = 9,
-      DTOutput("table", width = "100%")
+  wellPanel(
+    class = "top-filter-bar",
+    div(class = "filter-wrap", selectizeInput("domain_filter", "Select Domain:", choices = NULL, selected = NULL, multiple = TRUE)),
+    div(class = "filter-wrap", selectizeInput("subdomain_filter", "Select Subdomain:", choices = NULL, selected = NULL, multiple = TRUE)),
+    div(class = "filter-wrap", selectizeInput("source_filter", "Select Source:", choices = NULL, selected = NULL, multiple = TRUE)),
+    div(class = "filter-wrap", selectizeInput("table_name_filter", "Select Table:", choices = NULL, selected = NULL, multiple = TRUE)),
+    div(class = "filter-wrap", selectizeInput("has_branching_logic_filter", "Select Branching Logic:", choices = NULL, selected = NULL, multiple = TRUE)),
+    div(class = "filter-wrap", selectizeInput("sensitivity_filter", "Select Sensitivity:", choices = NULL, selected = NULL, multiple = TRUE)),
+    div(class = "filter-wrap", selectizeInput("plab_facet_filter", "Select Pelham Lab Facet:", choices = NULL, selected = NULL, multiple = TRUE)),
+    div(class = "filter-wrap", selectizeInput("plab_subfacet_filter", "Select Pelham Lab Subfacet:", choices = NULL, selected = NULL, multiple = TRUE,
+                                              options = list(placeholder = "Choose a Pelham Lab Facet first"))),
+    div(class = "filter-wrap", selectizeInput("alexsa_facet_filter", "Select ALEXSA Facet:", choices = NULL, selected = NULL, multiple = TRUE))
+  ),
+
+  # datatable occupies the rest of the page
+  fluidRow(
+    column(width = 12,
+           DTOutput("table", width = "100%")
     )
   )
 )
@@ -95,8 +110,6 @@ server <- function(input, output, session){
   rv <- reactiveValues(updating_domain = FALSE, updating_subdomain = FALSE)
   # update dropdown choices
   observe({
-    updateSelectizeInput(session, "study_filter", choices = unique(na.omit(metadata.xvars$study)),
-                         selected = character(0))
     # populate domain and subdomain with ALL options initially
     updateSelectizeInput(session, "domain_filter", choices = unique(na.omit(metadata.xvars$domain)),
                          selected = character(0))
@@ -226,9 +239,6 @@ server <- function(input, output, session){
   # reactive dataset based on filters
   filtered_data <- reactive({
     df <- metadata.xvars
-    if (!is.null(input$study_filter) && length(input$study_filter) > 0) {
-      df <- df[df$study %in% input$study_filter, , drop = FALSE]
-    }
     if (!is.null(input$domain_filter) && length(input$domain_filter) > 0) {
       df <- df[df$domain %in% input$domain_filter, , drop = FALSE]
     }

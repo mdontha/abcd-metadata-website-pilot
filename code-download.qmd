@@ -1,3 +1,3 @@
 ## Download the Code
 
-Here is a [link](https://github.com/wepelham3/abcd-itembuild) to the Github Repository containing the R project where we created the itembuild for TSP-ABCD.
+Here is a [link](https://github.com/wepelham3/abcd-itembuild) to the Github Repository containing abcd-itembuild, an R project that filters the ABCD 6.0 dataset down to items eligible for survey-based prediction models, makes necessary recodes to items, and outputs metadata-ABCD-items.csv.
