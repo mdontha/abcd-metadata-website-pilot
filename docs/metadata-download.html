@@ -127,7 +127,6 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#item-metadata-download" id="toc-item-metadata-download" class="nav-link active" data-scroll-target="#item-metadata-download">Item Metadata Download</a>
   <ul class="collapse">
   <li><a href="#documentation-for-navigating-the-item-metadata" id="toc-documentation-for-navigating-the-item-metadata" class="nav-link" data-scroll-target="#documentation-for-navigating-the-item-metadata">Documentation for Navigating the Item Metadata</a></li>
-  <li><a href="#study" id="toc-study" class="nav-link" data-scroll-target="#study">study</a></li>
   <li><a href="#domain" id="toc-domain" class="nav-link" data-scroll-target="#domain">domain</a></li>
   <li><a href="#sub_domain" id="toc-sub_domain" class="nav-link" data-scroll-target="#sub_domain">sub_domain</a></li>
   <li><a href="#source" id="toc-source" class="nav-link" data-scroll-target="#source">source</a></li>
@@ -150,10 +149,10 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="item-metadata-download" class="level2">
 <h2 class="anchored" data-anchor-id="item-metadata-download">Item Metadata Download</h2>
-<p>Here is the <a href="https://www.rd.usda.gov/sites/default/files/pdf-sample_0.pdf">link</a> to the csv file (metadata-ABCD-items.csv) for the item metadata for TSP-ABCD.</p>
+<p>Here is the <a href="https://www.rd.usda.gov/sites/default/files/pdf-sample_0.pdf">link</a> to the csv file (metadata-ABCD-items.csv) for the item metadata.</p>
 <section id="documentation-for-navigating-the-item-metadata" class="level3">
 <h3 class="anchored" data-anchor-id="documentation-for-navigating-the-item-metadata">Documentation for Navigating the Item Metadata</h3>
-<p>This is a user’s guide to navigating the item metadata for TSP-ABCD (metadata-ABCD-items.csv). The csv file contains several columns meant to help navigate the ABCD dataset while working in R or similar statistical programming languages.</p>
+<p>This is a user’s guide to navigating the item metadata (metadata-ABCD-items.csv). The csv file contains several columns meant to help navigate the ABCD dataset while working in R or similar statistical programming languages.</p>
 <table class="table">
 <thead>
 <tr class="header">
@@ -164,61 +163,56 @@ ul.task-list li input[type="checkbox"] {
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="#study">study</a></td>
-<td>ABCD metadata</td>
-<td>the study the item is derived from (Core or N/A) * might go ahead and delete this column</td>
-</tr>
-<tr class="even">
 <td><a href="#domain">domain</a></td>
 <td>ABCD metadata</td>
 <td>a sorting system that all ABCD 6.0 release variables were sorted into</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><a href="#sub_domain">sub_domain</a></td>
 <td>ABCD metadata</td>
 <td>a subsystem within domain that all ABCD 6.0 release variables were sorted into</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><a href="#source">source</a></td>
 <td>ABCD metadata</td>
 <td>allows us to quickly tell who the respondent/subject was</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><a href="#table_name">table_name</a></td>
 <td>ABCD metadata</td>
 <td>collections of ABCD variables that were administered and/or collected together</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><a href="#name">name</a></td>
 <td>ABCD metadata and Pelham Lab</td>
 <td>name of the variable; mostly derived from ABCD 6.0 metadata; some created by the Pelham Lab through manipulation</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><a href="#label">label</a></td>
 <td>ABCD metadata and Pelham Lab</td>
 <td>describes the contents of the variable in more detail</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><a href="#has_branching_logic">has_branching_logic</a></td>
 <td>Pelham Lab</td>
 <td>a yes/no indication of the presence of gating</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><a href="#sensitivity">sensitivity</a></td>
 <td>Pelham Lab</td>
 <td>an evaluation of how sensitive the content of the variable is</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><a href="#plab_facet">plab_facet</a></td>
 <td>Pelham Lab</td>
 <td>a sorting system that all ABCD 6.0 release variables and Pelham Lab variables were sorted into</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><a href="#plab_subfacet">plab_subfacet</a></td>
 <td>Pelham Lab</td>
 <td>a subsystem within domain that all ABCD 6.0 release and Pelham Lab variables were sorted into</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><a href="#alexsa_facet">alexsa_facet</a></td>
 <td>Pelham Lab</td>
 <td>utilizes the subscales from the Assessment of Liability and EXposure to Substance use and Antisocial behavior for Children (ALEXSA) assessment (<a href="https://pubmed.ncbi.nlm.nih.gov/20180677/">Ridenour et al., 2009</a>) to sort variables into</td>
@@ -226,41 +220,100 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 </section>
-<section id="study" class="level3">
-<h3 class="anchored" data-anchor-id="study">study</h3>
-</section>
 <section id="domain" class="level3">
 <h3 class="anchored" data-anchor-id="domain">domain</h3>
+<p>The domain is a sorting system originating from the ABCD metadata that groups all items into the following broad categories:</p>
+<ul>
+<li><p>ABCD (General)</p></li>
+<li><p>Friends, Family, &amp; Community</p></li>
+<li><p>Mental Health</p></li>
+<li><p>Neurocognition</p></li>
+<li><p>Novel Technologies</p></li>
+<li><p>Physical Health</p></li>
+<li><p>Substance Use</p></li>
+</ul>
+<p>There are more domains in ABCD – these are just the ones represented in TSP-ABCD.</p>
 </section>
 <section id="sub_domain" class="level3">
 <h3 class="anchored" data-anchor-id="sub_domain">sub_domain</h3>
+<p>The sub_domain is a sorting system originating from the ABCD metadata that groups items into the following categories within domains:</p>
+<ul>
+<li><p>Actigraphy</p></li>
+<li><p>Administrative</p></li>
+<li><p>Broad Psychopathology</p></li>
+<li><p>Cognition</p></li>
+<li><p>Community</p></li>
+<li><p>Culture</p></li>
+<li><p>Demographics</p></li>
+<li><p>Development</p></li>
+<li><p>Emotion</p></li>
+<li><p>Family</p></li>
+<li><p>Medical</p></li>
+<li><p>Mood</p></li>
+<li><p>Nutrition</p></li>
+<li><p>Parenting</p></li>
+<li><p>Peers</p></li>
+<li><p>Physical Health</p></li>
+<li><p>Psychosis</p></li>
+<li><p>Psychosocial</p></li>
+<li><p>Puberty</p></li>
+<li><p>Questionnaire</p></li>
+<li><p>School (Demographics)</p></li>
+<li><p>Screen Use</p></li>
+<li><p>Sex</p></li>
+<li><p>Sleep</p></li>
+<li><p>Social</p></li>
+<li><p>Stress</p></li>
+<li><p>SU Attitude</p></li>
+<li><p>SU Environment</p></li>
+<li><p>SU Patterns</p></li>
+<li><p>Task</p></li>
+<li><p>Temperament/Personality</p></li>
+<li><p>Work &amp; School</p></li>
+</ul>
+<p>There are more subdomains in ABCD – these are just the ones represented in TSP-ABCD.</p>
 </section>
 <section id="source" class="level3">
 <h3 class="anchored" data-anchor-id="source">source</h3>
+<p>Source refers to the informant that item was collected from / administered to. Informants can be:</p>
+<ul>
+<li><p>Youth</p></li>
+<li><p>Parent</p></li>
+<li><p>Teacher</p></li>
+</ul>
 </section>
 <section id="table_name" class="level3">
 <h3 class="anchored" data-anchor-id="table_name">table_name</h3>
+<p>The table_name column refers to ABCD tables, or collections of grouped ABCD variables. Datapoints from the same table were administered and collected together. For more information on the ABCD tables, read through the <a href="https://wiki.abcdstudy.org/release-notes/start-page.html">ABCD Release Notes</a>.</p>
 </section>
 <section id="name" class="level3">
 <h3 class="anchored" data-anchor-id="name">name</h3>
+<p>The items within the name column are unique variables that can either be found directly in the ABCD dataset or were created by the Pelham Lab through manipulating variables from the ABCD dataset.</p>
 </section>
 <section id="label" class="level3">
 <h3 class="anchored" data-anchor-id="label">label</h3>
+<p>The label column tells describes the contents of the item in further detail, typically the way in which the question was actually presented to the respondent. Many items, however, have labels that briefly describe the contents of the item, but not the way in which it was presented to the respondent. For items created by the Pelham Lab, labels will provide a description of the contents of the item.</p>
 </section>
 <section id="has_branching_logic" class="level3">
 <h3 class="anchored" data-anchor-id="has_branching_logic">has_branching_logic</h3>
+<p>Utilizes the branching_logic column in the ABCD metadata to produce a binary (yes/no) indication of whether the item has branching logic preceding it.</p>
 </section>
 <section id="sensitivity" class="level3">
 <h3 class="anchored" data-anchor-id="sensitivity">sensitivity</h3>
+<p>The sensitivity column captures how jarring the presentation of any given item might be on a survey without context. All items were evaluated by a member of the Pelham Lab as sensitive, maybe sensitive, or not sensitive.</p>
 </section>
 <section id="plab_facet" class="level3">
 <h3 class="anchored" data-anchor-id="plab_facet">plab_facet</h3>
+<p>The plab_facet is a sorting system specifically made to sort the items in the ABCD metadata. The plab_facet was created and reviewed by members of the Pelham Lab @ UCSD. The <a href="https://wiki.abcdstudy.org/release-notes/start-page.html">ABCD Release Notes</a> domains were considered in the creation of the plab_facet, but were expanded upon or made more specific in order to classify all items (including items created by the Pelham Lab)</p>
 </section>
 <section id="plab_subfacet" class="level3">
 <h3 class="anchored" data-anchor-id="plab_subfacet">plab_subfacet</h3>
+<p>The plab_subfacet is a sorting system within the plab_facet created by members of the Pelham Lab. Categories within the plab_subfacet were only created when clear and necessary categories within a plab_facet category emerged, such that all items in a plab_facet category could fall into a plab_subfacet cateogry of at least three or more items.</p>
 </section>
 <section id="alexsa_facet" class="level3">
 <h3 class="anchored" data-anchor-id="alexsa_facet">alexsa_facet</h3>
+<p>The alexsa_facet utilizes the subscales from the Assessment of Liability and EXposure to Substance use and Antisocial behavior for Children (ALEXSA) assessment (Ridenour et al., 2009). The ALEXSA is a child report assessment for predictors of early onset substance abuse and for antisocial behavior.</p>
+<p>Items presented in the original ALEXSA assessment fell into one of 34 unique subscales – all of which are domains in the alexsa_facet. At least two lab members were involved in sorting items and reviewing their placement into specific subscales within the alexsa_facet.</p>
 
 
 </section>
