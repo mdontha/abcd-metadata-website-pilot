@@ -1,0 +1,13 @@
+---
+title: "About TSP-ABCD"
+---
+
+## Welcome
+
+This is the website for navigating Tools for Survey-Based Prediction in the Adolescent Brain Cognitive Development Study (TSP-ABCD). TSP-ABCD provides researchers familiar with the ABCD study with practical tools to create predictive survey and / or screening models in the ABCD Study. If you do not already have access to the ABCD Study, you can request access to it through the National Institute of Health (NIH). For more information about the ABCD Study, click [here](https://abcdstudy.org/). You will need R to use TSP-ABCD.
+
+![](images/71874f98-1ab0-4311-864e-3f9032ac075b (1).png){width="222"}
+
+\*\*\*
+
+Development of this website and the associated work was funded by a grant from the National Institute on Drug Abuse (NIDA), DA058314.

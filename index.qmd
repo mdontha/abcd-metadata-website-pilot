@@ -1,7 +1,0 @@
----
-title: "About TSP-ABCD"
----
-
-## Welcome
-
-This is the website for navigating Tools for Survey-Based Prediction in the Adolescent Brain Cognitive Development Study (TSP-ABCD). TSP-ABCD provides researchers familiar with the ABCD study with practical tools to create predictive survey and / or screening models in the ABCD Study.
