@@ -1,8 +1,8 @@
 ---
-title: "About"
+title: "Introduction"
 ---
 
-#### What is this website?
+### **What is this website?**
 
 This website describes a set of tools we created for developing survey-based prediction models using data from the Adolescent Brain Cognitive Development (ABCD) Study release \[6.0\]
 
@@ -16,15 +16,15 @@ Here are some examples of prediction models you might want to develop:
 
 There are the sorts of tasks the tools are intended to help with.
 
-#### What do you mean by a "prediction model"?
+### **What do you mean by a "prediction model"?**
 
 "Prediction models" predict a dependent variable ($Y$) from multiple independent variables ($X$s). These are alternately called "prediction algorithms," "prognostic models," "forecasting models," or "screening algorithms."
 
 When developing these tools, the main use-case we had in mind was that in which the $X$s temporally precede the $Y$ (i.e., predicting from now into the future). However, the tools could also be used for predicting a $Y$ that is measured concurrently to the $X$s.
 
-#### Why focus on "survey-based" predictors?
+### **Why focus on "survey-based" predictors?**
 
-Here, the prediction models are \"survey-based\" because they only use predictors ($X$s) that could be measured via a single survey question.
+Here, the prediction models are "survey-based" because they only use predictors ($X$s) that could be measured via a single survey question.
 
 We exclude other measurement modalities (e.g., brain imaging, neuropsychological testing, interviewer impressions) because at present they are too expensive, time-consuming, and/or logistically challenging for widespread implementation.
 
@@ -32,7 +32,7 @@ It is difficult to get professionals and systems to use even basic, survey-based
 
 Here, we focus on relatively brief, low-burden, survey-based assessments that are suitable for widespread deployment in applied settings (e.g., schools, clinics, communities).
 
-#### What are the \"tools\" you offer here?
+### **What are the "tools" you offer here?**
 
 The tools included on this website are:
 
@@ -52,13 +52,13 @@ Creating and evaluating a predictive model has a few steps:
 
 4.  Evaluate the performance of the algorithm created in #3 along a set of predictive performance metrics
 
-> *When the dataset is fixed, like ABCD, then #2 becomes the most time-consuming step.*
->
-> *The tools make it easier to create such models via some plug-and-play options.*
+*When the dataset is fixed, like ABCD, then #2 becomes the most time-consuming step.*
 
-#### I want to create a survey-based prediction model: how do I get started?
+*The tools make it easier to create such models via some plug-and-play options.*
 
-First, you\'ll need access to the ABCD Study 6.0 data --- that is only available \[directly from the NIH\].
+### **I want to create a survey-based prediction model: how do I get started?**
+
+First, you'll need access to the ABCD Study 6.0 data --- that is only available \[directly from the NIH\].
 
 Second, download the code repository \[abcd-itembuild\]. This code will take the ABCD Study 6.0 data and create a tidy dataframe with individual survey items ready to plug into a predictive model.
 
@@ -79,9 +79,3 @@ Steyerberg, E. W., Moons, K. G. M., Windt, D. A. van der, Hayden, J. A., Perel, 
 Riley, R. D., Hemingway, H., Altman, D. G., & Group,  for the P. (2013). Prognosis research strategy (PROGRESS) 3: Prognostic model research. PLOS Medicine, 10(2), e1001381. <https://doi.org/10.1371/journal.pmed.1001381>
 
 Hingorani, A. D., Windt, D. A. van der, Riley, R. D., Abrams, K., Moons, K. G. M., Steyerberg, E. W., Schroter, S., Sauerbrei, W., Altman, D. G., & Hemingway, H. (2013). Prognosis research strategy (PROGRESS) 4: Stratified medicine research. BMJ, 346, e5793. <https://doi.org/10.1136/bmj.e5793>
-
-\*\*\*
-
-Development of this website and the associated work was funded by a grant from the National Institute on Drug Abuse (NIDA), DA058314.
-
-Contact \<wpelham at ucsd dot edu\> with any questions.

@@ -42,8 +42,6 @@ facet_map <- list(
 
 # UI
 ui <- fluidPage(
-  
-  titlePanel("Metadata Explorer"),
   tags$head(tags$style(HTML("
    /* page container (unchanged) */
     .container-fluid { max-width: 1600px; margin: 0 auto; }

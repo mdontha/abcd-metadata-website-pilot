@@ -6,6 +6,10 @@ If you have a question that is not currently addressed here, please reach out to
 
 No, you must attain access to the ABCD 6.0 release (only available directly from the NIH) for the code to work. It is highly specific to the ABCD dataset.
 
+#### Is the code available in another programming language aside from R?
+
+No, currently the only available code for this project is in R.
+
 #### How did you create the metadata?
 
 Pelham Lab research assistants evaluated the entirety of the metadata from the ABCD 6.0 release under the supervision of Dr. William Pelham III. Variables were first evaluated on the basis of viability as a question on a survey. If a variable could be a survey question, it was then evaluated on the following: a) administration of the variable in the core study (such that all eligible ABCD participants could have completed the variable) , b) administration of the variable happening outside of the eligibility screener, c) if gating is present, the variable's ability to be combined with the gating question(s) to produce a straightforward single question with a single set of responses with a monotonic relationship with the outcomes , and d) any other reason that would make presenting the variable on a predictive screening battery difficult.

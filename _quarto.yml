@@ -7,19 +7,19 @@ website:
   navbar:
     left:
       - file: index.qmd
-        text: Welcome to TSP-ABCD
-      - file: about.qmd
-        text: About - what is this?
-      - file: faq.qmd
-        text: FAQs
+        text: Getting Started
+      - file: intro.qmd
+        text: Intro
       - file: code-download.qmd
-        text: Download the Code
+        text: Downloads
       - file: metadata-download.qmd
-        text: Download the Item Metadata
+        text: Documentation
       - file: explore-metadata.qmd
-        text: Explore the Item Metadata
-      - file: worked-example.qmd
-        text: Worked Example
+        text: Metadata Explorer
+      - file: tutorial.qmd
+        text: Tutorial
+      -  file: faq.qmd
+         text: FAQs
 
 
       

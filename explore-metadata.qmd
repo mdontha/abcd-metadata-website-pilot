@@ -1,5 +1,5 @@
 ---
-title: "Item Metadata Explorer"
+title: "Metadata Explorer"
 format: html
 ---
 

@@ -1,0 +1,21 @@
+---
+title: "About TSP-ABCD"
+---
+
+## Welcome
+
+This is the website for navigating Tools for Survey-Based Prediction in the Adolescent Brain Cognitive Development Study (TSP-ABCD). TSP-ABCD provides researchers familiar with the ABCD study with practical tools to create predictive survey and / or screening models in the ABCD Study. If you do not already have access to the ABCD Study, you can request access to it through the National Institute of Health (NIH). For more information about the ABCD Study, click [here](https://abcdstudy.org/). You will need R to use TSP-ABCD.
+
+![](images/71874f98-1ab0-4311-864e-3f9032ac075b (1).png){width="222"}
+
+To get started:
+
+1.  If you don't already have it, obtain access to the ABCD 6.0 data \[only available directly through the NIH\]
+2.  Download the code repository \[abcd-itembuild\]. This code will take the ABCD Study 6.0 data and create a tidy dataframe with individual survey items ready to plug into a predictive model.
+3.  See the \[worked example\] for a start-to-finish illustration that developed a screening measure for prospective prediction of substances use outcomes from late childhood (ages 9-10) to mid-adolescence (ages 15-16). This page also has utility functions to automate steps in the process (e.g., \[example\]).
+
+If you do not use R, you can still download our item metadata (metadata-ABCD-items.csv) to work on survey-based projects. The items in the metadata consist of the entirety of variables that could be presented on a survey with little to no context.
+
+\*\*\*
+
+Development of this website and the associated work was funded by a grant from the National Institute on Drug Abuse (NIDA), DA058314.

@@ -1,13 +1,9 @@
-## Item Metadata Download
-
-Here is the [link](https://www.rd.usda.gov/sites/default/files/pdf-sample_0.pdf) to the csv file (metadata-ABCD-items.csv) for the item metadata.
-
-### Documentation for Navigating the Item Metadata
+## Documentation for Navigating the Item Metadata
 
 This is a user's guide to navigating the item metadata (metadata-ABCD-items.csv). The csv file contains several columns meant to help navigate the ABCD dataset while working in R or similar statistical programming languages.
 
 | Column                | Origin                       | Contents                                                                                                                                                                                                                                   |
-|-------------------------------------------|-------------|---------------------------------------------------------------|
+|-----------------------|---------------|----------------------------------|
 | [domain]              | ABCD metadata                | a sorting system that all ABCD 6.0 release variables were sorted into                                                                                                                                                                      |
 | [sub_domain]          | ABCD metadata                | a subsystem within domain that all ABCD 6.0 release variables were sorted into                                                                                                                                                             |
 | [source]              | ABCD metadata                | allows us to quickly tell who the respondent/subject was                                                                                                                                                                                   |
