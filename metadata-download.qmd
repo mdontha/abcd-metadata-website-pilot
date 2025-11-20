@@ -2,19 +2,20 @@
 
 This is a user's guide to navigating the item metadata (metadata-ABCD-items.csv). The csv file contains several columns meant to help navigate the ABCD dataset while working in R or similar statistical programming languages.
 
-| Column                | Origin                       | Contents                                                                                                                                                                                                                                   |
+| Column                                                                           | Origin                       | Contents                                                                                                                                                                                                                                   |
 |-----------------------------------------------------|---------------|----------------------------------|
-| [domain]              | ABCD metadata                | a sorting system that all ABCD 6.0 release variables were sorted into                                                                                                                                                                      |
-| [sub_domain]          | ABCD metadata                | a subsystem within domain that all ABCD 6.0 release variables were sorted into                                                                                                                                                             |
-| [source]              | ABCD metadata                | allows us to quickly tell who the respondent/subject was                                                                                                                                                                                   |
-| [table_name]          | ABCD metadata                | collections of ABCD variables that were administered and/or collected together                                                                                                                                                             |
-| [variable]            | ABCD metadata and Pelham Lab | name of the item; mostly derived from ABCD 6.0 metadata; some created by the Pelham Lab through manipulation                                                                                                                               |
-| [label]               | ABCD metadata and Pelham Lab | describes the contents of the variable in more detail                                                                                                                                                                                      |
-| [has_branching_logic] | Pelham Lab                   | a yes/no indication of the presence of gating                                                                                                                                                                                              |
-| [sensitivity]         | Pelham Lab                   | an evaluation of how sensitive the content of the variable is                                                                                                                                                                              |
-| [plab_facet]          | Pelham Lab                   | a sorting system that all ABCD 6.0 release variables and Pelham Lab variables were sorted into                                                                                                                                             |
-| [plab_subfacet]       | Pelham Lab                   | a subsystem within domain that all ABCD 6.0 release and Pelham Lab variables were sorted into                                                                                                                                              |
-| [alexsa_facet]        | Pelham Lab                   | utilizes the subscales from the Assessment of Liability and EXposure to Substance use and Antisocial behavior for Children (ALEXSA) assessment ([Ridenour et al., 2009](https://pubmed.ncbi.nlm.nih.gov/20180677/)) to sort variables into |
+| [domain]                                                                         | ABCD metadata                | a sorting system that all ABCD 6.0 release variables were sorted into                                                                                                                                                                      |
+| [sub_domain]                                                                     | ABCD metadata                | a subsystem within domain that all ABCD 6.0 release variables were sorted into                                                                                                                                                             |
+| [source]                                                                         | ABCD metadata                | allows us to quickly tell who the respondent/subject was                                                                                                                                                                                   |
+| [table_name]                                                                     | ABCD metadata                | collections of ABCD variables that were administered and/or collected together                                                                                                                                                             |
+| [variable]                                                                       | ABCD metadata and Pelham Lab | name of the item; mostly derived from ABCD 6.0 metadata; some created by the Pelham Lab through manipulation                                                                                                                               |
+| [label]                                                                          | ABCD metadata and Pelham Lab | describes the contents of the variable in more detail                                                                                                                                                                                      |
+| [has_branching_logic]                                                            | Pelham Lab                   | a yes/no indication of the presence of gating                                                                                                                                                                                              |
+| [sensitivity]                                                                    | Pelham Lab                   | an evaluation of how sensitive the content of the variable is                                                                                                                                                                              |
+| [plab_facet]                                                                     | Pelham Lab                   | a sorting system that all ABCD 6.0 release variables and Pelham Lab variables were sorted into                                                                                                                                             |
+| [plab_subfacet]                                                                  | Pelham Lab                   | a subsystem within domain that all ABCD 6.0 release and Pelham Lab variables were sorted into                                                                                                                                              |
+| [alexsa_facet]                                                                   | Pelham Lab                   | utilizes the subscales from the Assessment of Liability and EXposure to Substance use and Antisocial behavior for Children (ALEXSA) assessment ([Ridenour et al., 2009](https://pubmed.ncbi.nlm.nih.gov/20180677/)) to sort variables into |
+| nobs_00mo, nobs_12mo, nobs_24mo, nobs_36mo, nobs_48mo, nobs_60mo, or nobs_72mo   | Pelham Lab                   | counts number of observations (nobs) in any given wave of ABCD data collection for a given item                                                                                                                                            |
 
 ### domain
 
@@ -149,3 +150,23 @@ The plab_subfacet is a sorting system within the plab_facet created by members o
 The alexsa_facet utilizes the subscales from the Assessment of Liability and EXposure to Substance use and Antisocial behavior for Children (ALEXSA) assessment (Ridenour et al., 2009). The ALEXSA is a child report assessment for predictors of early onset substance abuse and for antisocial behavior.
 
 Items presented in the original ALEXSA assessment fell into one of 34 unique subscales -- all of which are domains in the alexsa_facet. At least two lab members were involved in sorting items and reviewing their placement into specific subscales within the alexsa_facet.
+
+### nobs_00mo, nobs_12mo, nobs_24mo, nobs_36mo, nobs_48mo,  nobs_60mo, or nobs_72mo 
+
+The nobs (number of observations) columns represent the counts of any given item at any wave. The waves are represented as months from baseline for clarity.
+
+Here is a what each wave in DEAP currently looks like:
+
+00mo: ses-00A
+
+12mo: ses-01A
+
+24mo: ses-02A
+
+36mo: ses-03A
+
+48mo: ses-04A
+
+60mo: ses-05A
+
+72mo: ses-06A
