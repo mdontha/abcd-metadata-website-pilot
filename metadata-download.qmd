@@ -3,12 +3,12 @@
 This is a user's guide to navigating the item metadata (metadata-ABCD-items.csv). The csv file contains several columns meant to help navigate the ABCD dataset while working in R or similar statistical programming languages.
 
 | Column                | Origin                       | Contents                                                                                                                                                                                                                                   |
-|-----------------------|---------------|----------------------------------|
+|-----------------------------------------------------|---------------|----------------------------------|
 | [domain]              | ABCD metadata                | a sorting system that all ABCD 6.0 release variables were sorted into                                                                                                                                                                      |
 | [sub_domain]          | ABCD metadata                | a subsystem within domain that all ABCD 6.0 release variables were sorted into                                                                                                                                                             |
 | [source]              | ABCD metadata                | allows us to quickly tell who the respondent/subject was                                                                                                                                                                                   |
 | [table_name]          | ABCD metadata                | collections of ABCD variables that were administered and/or collected together                                                                                                                                                             |
-| [name]                | ABCD metadata and Pelham Lab | name of the variable; mostly derived from ABCD 6.0 metadata; some created by the Pelham Lab through manipulation                                                                                                                           |
+| [variable]            | ABCD metadata and Pelham Lab | name of the variable; mostly derived from ABCD 6.0 metadata; some created by the Pelham Lab through manipulation                                                                                                                           |
 | [label]               | ABCD metadata and Pelham Lab | describes the contents of the variable in more detail                                                                                                                                                                                      |
 | [has_branching_logic] | Pelham Lab                   | a yes/no indication of the presence of gating                                                                                                                                                                                              |
 | [sensitivity]         | Pelham Lab                   | an evaluation of how sensitive the content of the variable is                                                                                                                                                                              |
@@ -120,7 +120,7 @@ Source refers to the informant that item was collected from / administered to. I
 
 The table_name column refers to ABCD tables, or collections of grouped ABCD variables. Datapoints from the same table were administered and collected together. For more information on the ABCD tables, read through the [ABCD Release Notes](https://wiki.abcdstudy.org/release-notes/start-page.html).
 
-### name
+### variable
 
 The items within the name column are unique variables that can either be found directly in the ABCD dataset or were created by the Pelham Lab through manipulating variables from the ABCD dataset.
 
