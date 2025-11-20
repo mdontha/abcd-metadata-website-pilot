@@ -44,4 +44,20 @@ Please report any bugs or errors to \< placeholder at health dot ucsd dot edu \>
 
 Assessment of Liability and EXposure to Substance use and Antisocial behavior for Children (ALEXSA) assessment ([Ridenour et al., 2009](https://pubmed.ncbi.nlm.nih.gov/20180677/)) is a child report assessment for predictors of early onset substance abuse and for antisocial behavior. The "alexsa_facet" featured in metadata-ABCD-items.csv was created through evaluating whether each item fit into one of the 34 subscales.
 
-#### 
+#### **Where can I read more about creating and evaluating predictive modeling tools?**
+
+Here are some references!
+
+Steyerberg, E. W., & Harrell, F. E. (2016). Prediction models need appropriate internal, internal--external, and external validation. Journal of Clinical Epidemiology, 69, 245--247. https://doi.org/10.1016/j.jclinepi.2015.04.005
+
+Japkowicz, N., & Shah, M. (2011). Evaluating Learning Algorithms: A Classification Perspective. Cambridge University Press.
+
+Hemingway, H., Croft, P., Perel, P., Hayden, J. A., Abrams, K., Timmis, A., Briggs, A., Udumyan, R., Moons, K. G. M., Steyerberg, E. W., Roberts, I., Schroter, S., Altman, D. G., & Riley, R. D. (2013). Prognosis research strategy (PROGRESS) 1: A framework for researching clinical outcomes. BMJ, 346, e5595. <https://doi.org/10.1136/bmj.e5595> 
+
+Riley, R. D., Hayden, J. A., Steyerberg, E. W., Moons, K. G. M., Abrams, K., Kyzas, P. A., Malats, N., Briggs, A., Schroter, S., Altman, D. G., Hemingway, H., & Group,  for the P. (2013). Prognosis research strategy (PROGRESS) 2: Prognostic factor research. PLOS Medicine, 10(2), e1001380. <https://doi.org/10.1371/journal.pmed.1001380> 
+
+Steyerberg, E. W., Moons, K. G. M., Windt, D. A. van der, Hayden, J. A., Perel, P., Schroter, S., 
+
+Riley, R. D., Hemingway, H., Altman, D. G., & Group,  for the P. (2013). Prognosis research strategy (PROGRESS) 3: Prognostic model research. PLOS Medicine, 10(2), e1001381. <https://doi.org/10.1371/journal.pmed.1001381>
+
+Hingorani, A. D., Windt, D. A. van der, Riley, R. D., Abrams, K., Moons, K. G. M., Steyerberg, E. W., Schroter, S., Sauerbrei, W., Altman, D. G., & Hemingway, H. (2013). Prognosis research strategy (PROGRESS) 4: Stratified medicine research. BMJ, 346, e5793. <https://doi.org/10.1136/bmj.e5793>
