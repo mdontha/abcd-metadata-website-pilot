@@ -54,6 +54,10 @@ Please report any bugs or errors to \< placeholder at health dot ucsd dot edu \>
 
 Assessment of Liability and EXposure to Substance use and Antisocial behavior for Children (ALEXSA) assessment ([Ridenour et al., 2009](https://pubmed.ncbi.nlm.nih.gov/20180677/)) is a child report assessment for predictors of early onset substance abuse and for antisocial behavior. The "alexsa_facet" featured in metadata-ABCD-items.csv was created through evaluating whether each item fit into one of the 34 subscales.
 
+### **How do I acknowledge / cite this tool?**
+
+TBD
+
 ### **Where can I read more about creating and evaluating predictive modeling tools?**
 
 Here are some references!

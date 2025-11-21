@@ -5,7 +5,7 @@ account: mdontha
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 16093509
-bundleId: 11204306
+bundleId: 11208910
 url: https://mdontha.shinyapps.io/abcd-metadata-website-pilot/
 version: 1
 asMultiple: FALSE

@@ -3,7 +3,7 @@
 This is a user's guide to navigating the item metadata (metadata-ABCD-items.csv). The csv file contains several columns meant to help navigate the ABCD dataset while working in R or similar statistical programming languages.
 
 | Column                                                                           | Origin                       | Contents                                                                                                                                                                                                                                   |
-|-----------------------------------------------------|---------------|----------------------------------|
+|----------------------------------------------------------------------------------|------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [domain]                                                                         | ABCD metadata                | a sorting system that all ABCD 6.0 release variables were sorted into                                                                                                                                                                      |
 | [sub_domain]                                                                     | ABCD metadata                | a subsystem within domain that all ABCD 6.0 release variables were sorted into                                                                                                                                                             |
 | [source]                                                                         | ABCD metadata                | allows us to quickly tell who the respondent/subject was                                                                                                                                                                                   |
@@ -151,7 +151,7 @@ The alexsa_facet utilizes the subscales from the Assessment of Liability and EXp
 
 Items presented in the original ALEXSA assessment fell into one of 34 unique subscales -- all of which are domains in the alexsa_facet. At least two lab members were involved in sorting items and reviewing their placement into specific subscales within the alexsa_facet.
 
-### nobs_00mo, nobs_12mo, nobs_24mo, nobs_36mo, nobs_48mo,  nobs_60mo, or nobs_72mo 
+### nobs_00mo, nobs_12mo, nobs_24mo, nobs_36mo, nobs_48mo, nobs_60mo, or nobs_72mo
 
 The nobs (number of observations) columns represent the counts of any given item at any wave. The waves are represented as months from baseline for clarity.
 
