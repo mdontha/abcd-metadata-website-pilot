@@ -4,7 +4,7 @@ title: "Introduction"
 
 ### **What is this website?**
 
-This website describes a set of tools we created for developing survey-based prediction models using data from the Adolescent Brain Cognitive Development (ABCD) Study release \[6.0\]
+This website describes a set of tools we created for developing prediction models and uncovering risk scores using data from the Adolescent Brain Cognitive Development (ABCD) Study release \[6.0\]
 
 Here are some examples of prediction models you might want to develop:
 
@@ -22,7 +22,7 @@ There are the sorts of tasks the tools are intended to help with.
 
 When developing these tools, the main use-case we had in mind was that in which the $X$s temporally precede the $Y$ (i.e., predicting from now into the future). However, the tools could also be used for predicting a $Y$ that is measured concurrently to the $X$s.
 
-### **Why focus on "survey-based" predictors?**
+### **Why focus on "survey-based" predictors? (NEED TO RE-WORK THIS PARAGRAPH TO "WHY FOCUS ON RISK SCORES")**
 
 Here, the prediction models are "survey-based" because they only use predictors ($X$s) that could be measured via a single survey question.
 
@@ -40,8 +40,6 @@ The tools included on this website are:
 
 -   Metadata for the 2,742 individual survey items that can be used to guide selection of which to use as predictors (e.g., to identify those measuring similar concepts)
 
--   A worked example with code showing the end-to-end process 
-
 Creating and evaluating a predictive model has a few steps:
 
 1.  Choose what to predict ($Y$)
@@ -54,12 +52,10 @@ Creating and evaluating a predictive model has a few steps:
 
 *When the dataset is fixed, like ABCD, then #2 becomes the most time-consuming step.*
 
-*The tools make it easier to create such models via some plug-and-play options.*
-
 ### **I want to create a survey-based prediction model: how do I get started?**
 
-First, you'll need access to the ABCD Study 6.0 data --- that is only available \[directly from the NIH\].
+First, you'll need access to the ABCD Study 6.0 data --- that is only available \[directly from the [NIH](https://www.nbdc-datahub.org/)\].
 
 Second, download the code repository \[abcd-itembuild\]. This code will take the ABCD Study 6.0 data and create a tidy dataframe with individual survey items ready to plug into a predictive model.
 
-Third, see the \[worked example\] for a start-to-finish illustration that developed a screening measure for prospective prediction of substances use outcomes from late childhood (ages 9-10) to mid-adolescence (ages 15-16). This page also has utility functions to automate steps in the process (e.g., \[example\]).
+Third, reference our preprint to see how to develop a screening measure for prospective prediction of high-risk outcomes from late childhood (ages 9-10) to mid-adolescence (ages 15-16).

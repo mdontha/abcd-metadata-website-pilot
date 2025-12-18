@@ -16,8 +16,6 @@ website:
         text: Documentation
       - file: explore-metadata.qmd
         text: Metadata Explorer
-      - file: tutorial.qmd
-        text: Tutorial
       -  file: faq.qmd
          text: FAQs
 
